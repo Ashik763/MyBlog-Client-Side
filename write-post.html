@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header> 
+        <img class= "background-image" src="./banner.jpeg"/>
+       <div class="intro">
+      
+        <div class="profile-name ">Write new Post !</div>
+        <div class="subtext " > Let's add a new blog post! </div>
+    </div>
+    
+    </header>
+    <div class="btn">
+        <a class="goBack" href="index.html">Back </a>    
+        </div>
+
+    <div class="form-container main-container"> 
+        <form> 
+        <input id="post-title" type="text" name= "post-title" placeholder="Post-title"><br>
+        <textarea id ="form-post-content" name="post-content" placeholder="Post-content">Write your post here! </textarea>  
+        <div class="file-upload"> 
+            <label> Choose Image </label>
+            <input id="form-post-image" type="file" name="post-image" accept="image/*">
+        </div>
+        <button id="form-post-submit" type = "button" onclick="submitNewPost(event)"> Submit </button>
+        </form>
+    
+    
+    
+    </div>
+
+    <script src="./write-post.js"> </script>
+</body>
+</html>
